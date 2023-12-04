@@ -740,6 +740,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="Kga-Do-HlI"/>
         <segue reference="XHE-qF-yry"/>
     </inferredMetricsTieBreakers>
     <resources>
