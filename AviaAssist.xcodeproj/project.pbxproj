@@ -19,6 +19,8 @@
 		C5CE70292B03EF6F009CB360 /* AviaAssistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CE70282B03EF6F009CB360 /* AviaAssistTests.swift */; };
 		C5CE70332B03EF6F009CB360 /* AviaAssistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CE70322B03EF6F009CB360 /* AviaAssistUITests.swift */; };
 		C5CE70352B03EF6F009CB360 /* AviaAssistUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CE70342B03EF6F009CB360 /* AviaAssistUITestsLaunchTests.swift */; };
+		C5DC96BF2B22002200CAD0CC /* RestTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DC96BE2B22002200CAD0CC /* RestTime.swift */; };
+		C5DC96C52B22317000CAD0CC /* BriefingScripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DC96C42B22317000CAD0CC /* BriefingScripts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		C5CE702E2B03EF6F009CB360 /* AviaAssistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AviaAssistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5CE70322B03EF6F009CB360 /* AviaAssistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviaAssistUITests.swift; sourceTree = "<group>"; };
 		C5CE70342B03EF6F009CB360 /* AviaAssistUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviaAssistUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C5DC96BE2B22002200CAD0CC /* RestTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestTime.swift; sourceTree = "<group>"; };
+		C5DC96C42B22317000CAD0CC /* BriefingScripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefingScripts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				C5CE701F2B03EF6F009CB360 /* Info.plist */,
 				7AA762162B21608900A87295 /* ColdTemp.swift */,
 				7AA7621C2B21A74600A87295 /* Dashboard.swift */,
+				C5DC96BE2B22002200CAD0CC /* RestTime.swift */,
+				C5DC96C42B22317000CAD0CC /* BriefingScripts.swift */,
 			);
 			path = AviaAssist;
 			sourceTree = "<group>";
@@ -272,6 +278,8 @@
 				7AA762172B21608900A87295 /* ColdTemp.swift in Sources */,
 				C5CE70122B03EF6C009CB360 /* AppDelegate.swift in Sources */,
 				7AA7621D2B21A74600A87295 /* Dashboard.swift in Sources */,
+				C5DC96BF2B22002200CAD0CC /* RestTime.swift in Sources */,
+				C5DC96C52B22317000CAD0CC /* BriefingScripts.swift in Sources */,
 				C5CE70142B03EF6C009CB360 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
