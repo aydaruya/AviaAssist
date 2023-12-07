@@ -138,6 +138,16 @@
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8fZ-g1-3Z1" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="-103" width="393" height="1200"/>
                                         <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cR7-Bp-eXq">
+                                                <rect key="frame" x="49" y="136" width="295" height="70"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" name="Buttons"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Resting Time Calculator"/>
+                                                <connections>
+                                                    <segue destination="fjI-1X-zdn" kind="show" id="4he-XV-yMj"/>
+                                                </connections>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwb-gb-HWr">
                                                 <rect key="frame" x="49" y="252" width="295" height="70"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -218,18 +228,6 @@
                                                     <segue destination="Vms-Oj-WvC" kind="show" id="lwY-1V-Qi7"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cR7-Bp-eXq">
-                                                <rect key="frame" x="49" y="136" width="295" height="70"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="70" id="0aY-9v-bEE"/>
-                                                </constraints>
-                                                <color key="tintColor" name="Buttons"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Resting Time Calculator"/>
-                                                <connections>
-                                                    <segue destination="fjI-1X-zdn" kind="show" id="4he-XV-yMj"/>
-                                                </connections>
-                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DASHBOARD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ge9-Ai-CR3">
                                                 <rect key="frame" x="96" y="60" width="202" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -253,7 +251,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jxi-BZ-Yy5"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Background"/>
                         <constraints>
                             <constraint firstItem="rGP-3a-ZmN" firstAttribute="top" secondItem="0T0-RC-jix" secondAttribute="top" id="5H5-ss-Rig"/>
                             <constraint firstItem="8fZ-g1-3Z1" firstAttribute="width" secondItem="0T0-RC-jix" secondAttribute="width" id="8Fh-Ro-tNG"/>
@@ -502,7 +500,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s6G-Oa-Qn2" userLabel="scriptPicker">
-                                <rect key="frame" x="37" y="318" width="320" height="216"/>
+                                <rect key="frame" x="36.666666666666657" y="318" width="320" height="216"/>
                             </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bjd-nQ-1w3"/>
