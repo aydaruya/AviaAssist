@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7AA762172B21608900A87295 /* ColdTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA762162B21608900A87295 /* ColdTemp.swift */; };
+		7AA7621B2B217BB900A87295 /* AutomatedCFRCheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA7621A2B217BB900A87295 /* AutomatedCFRCheckInViewController.swift */; };
+		7AA7621D2B21A74600A87295 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA7621C2B21A74600A87295 /* Dashboard.swift */; };
 		C5CE70122B03EF6C009CB360 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CE70112B03EF6C009CB360 /* AppDelegate.swift */; };
 		C5CE70142B03EF6C009CB360 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CE70132B03EF6C009CB360 /* SceneDelegate.swift */; };
 		C5CE70162B03EF6C009CB360 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CE70152B03EF6C009CB360 /* ViewController.swift */; };
@@ -38,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		7AA762162B21608900A87295 /* ColdTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColdTemp.swift; sourceTree = "<group>"; };
+		7AA7621A2B217BB900A87295 /* AutomatedCFRCheckInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomatedCFRCheckInViewController.swift; sourceTree = "<group>"; };
+		7AA7621C2B21A74600A87295 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 		C5CE700E2B03EF6C009CB360 /* AviaAssist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AviaAssist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5CE70112B03EF6C009CB360 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5CE70132B03EF6C009CB360 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 		C5CE70102B03EF6C009CB360 /* AviaAssist */ = {
 			isa = PBXGroup;
 			children = (
+				7AA7621A2B217BB900A87295 /* AutomatedCFRCheckInViewController.swift */,
 				C5CE70112B03EF6C009CB360 /* AppDelegate.swift */,
 				C5CE70132B03EF6C009CB360 /* SceneDelegate.swift */,
 				C5CE70152B03EF6C009CB360 /* ViewController.swift */,
@@ -109,6 +114,7 @@
 				C5CE701C2B03EF6F009CB360 /* LaunchScreen.storyboard */,
 				C5CE701F2B03EF6F009CB360 /* Info.plist */,
 				7AA762162B21608900A87295 /* ColdTemp.swift */,
+				7AA7621C2B21A74600A87295 /* Dashboard.swift */,
 			);
 			path = AviaAssist;
 			sourceTree = "<group>";
@@ -262,8 +268,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5CE70162B03EF6C009CB360 /* ViewController.swift in Sources */,
+				7AA7621B2B217BB900A87295 /* AutomatedCFRCheckInViewController.swift in Sources */,
 				7AA762172B21608900A87295 /* ColdTemp.swift in Sources */,
 				C5CE70122B03EF6C009CB360 /* AppDelegate.swift in Sources */,
+				7AA7621D2B21A74600A87295 /* Dashboard.swift in Sources */,
 				C5CE70142B03EF6C009CB360 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
