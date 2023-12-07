@@ -756,10 +756,10 @@
             </objects>
             <point key="canvasLocation" x="2423.6641221374043" y="181.69014084507043"/>
         </scene>
-        <!--View Controller-->
+        <!--Cold Temp-->
         <scene sceneID="Hao-G4-BHk">
             <objects>
-                <viewController id="fgt-y8-BgB" customClass="ViewController" customModule="AviaAssist" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fgt-y8-BgB" customClass="ColdTemp" customModule="AviaAssist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EdV-QA-41G">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1663,7 +1663,7 @@ ALTITUDES</string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="oHV-Wl-dI7"/>
-        <segue reference="Ii4-rI-5hW"/>
+        <segue reference="vJm-Le-79X"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Logo" width="1358" height="994"/>
