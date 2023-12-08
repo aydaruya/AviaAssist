@@ -19,6 +19,9 @@ class ViewController: UIViewController {
         scriptPicker.dataSource = self
     }
     
+    
+        var pickerData = ["Weather Conditions", "Deicing or Delays", "Turbulance", "Introduction", "Emergency Procedures", "Change of Flight Path", "Special Services", "Arrivals and Customs"]
+    
 }
 
         extension ViewController: UIPickerViewDataSource {
@@ -27,20 +30,19 @@ class ViewController: UIViewController {
             }
             
             func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-                return 10
+                return pickerData.count
             }
         }
         extension ViewController: UIPickerViewDelegate {
             func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-                return "test"
+                return pickerData[row]
             }
         }
         
         
         
         
-        
-        //   var pickerData = ["Weather Conditions", "Deicing or Delays", "Turbulance", "Introduction", "Emergency Procedures", "Change of Flight Path", "Special Services", "Arrivals and Customs"]
+      
         
         
         

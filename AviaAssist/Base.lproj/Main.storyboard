@@ -394,7 +394,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Weather Conditions" cornerStyle="fixed"/>
                                 <connections>
-                                    <segue destination="X5b-HE-a2s" kind="show" id="uUX-Bo-UyN"/>
+                                    <segue destination="CAE-w8-I9Z" kind="show" id="JpQ-ea-3i3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gkl-C8-k2R">
@@ -511,6 +511,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NTS-R1-L1C"/>
+                    <connections>
+                        <outlet property="scriptPicker" destination="s6G-Oa-Qn2" id="FL4-4j-5hD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8x1-E7-WAU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
