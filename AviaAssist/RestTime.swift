@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RestingTimeCalculatorViewController: UIViewController {
+class RestTime: UIViewController {
     
     @IBOutlet weak var numPilotsTextField: UITextField!
     @IBOutlet weak var hoursTextField: UITextField!

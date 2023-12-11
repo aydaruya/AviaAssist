@@ -46,7 +46,7 @@ class AutomatedCFRCheckInViewController: UIViewController {
     func generateCustomPhoneNumber(thyID: String, cfrPassword: String) -> String {
         // Implement your custom phone number generation logic here
         // This is a dummy implementation
-        return "1-800-\(thyID.suffix(3))-\(cfrPassword.prefix(3))"
+        return "1-800-**1\(thyID.suffix(3))**2\(cfrPassword.prefix(3))"
     }
 
     // Helper function to present alerts

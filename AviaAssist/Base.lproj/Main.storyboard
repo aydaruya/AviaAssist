@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--CargoIMP Codes-->
         <scene sceneID="JyA-1G-6Yz">
             <objects>
-                <viewController id="m1w-Q6-I9w" sceneMemberID="viewController">
+                <viewController id="m1w-Q6-I9w" customClass="CargoIMPCodes" customModule="AviaAssist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oNC-iE-RWZ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,27 +31,27 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Cargo IMP code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4xb-36-Ff6">
-                                <rect key="frame" x="38" y="220" width="317" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="0.65474529660000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAC-A2-FSI">
-                                <rect key="frame" x="49" y="295" width="295" height="337"/>
+                                <rect key="frame" x="49" y="435" width="295" height="337"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="Buttons"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9hk-R1-f2l">
+                                <rect key="frame" x="0.0" y="229" width="393" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ORt-SP-S7x"/>
                         <color key="backgroundColor" name="Background"/>
                     </view>
                     <navigationItem key="navigationItem" id="uau-qh-GQ8"/>
+                    <connections>
+                        <outlet property="codePickerView" destination="9hk-R1-f2l" id="Q5e-hh-FPH"/>
+                        <outlet property="definitionLabel" destination="JAC-A2-FSI" id="sRo-wn-A8D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8sj-j6-6zy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -340,15 +340,22 @@
                         <color key="backgroundColor" name="Background"/>
                     </view>
                     <navigationItem key="navigationItem" id="evk-aT-zlk"/>
+                    <connections>
+                        <outlet property="hoursTextField" destination="7Sa-MH-gYd" id="wL7-Ad-3pZ"/>
+                        <outlet property="minutesTextField" destination="JL2-JH-aNa" id="dsY-m3-uMr"/>
+                        <outlet property="numPilotsTextField" destination="FZ4-8q-dDe" id="o86-kG-aXh"/>
+                        <outlet property="outputLabel" destination="ek4-9s-DM4" id="JRz-6b-wSc"/>
+                        <outlet property="submitButton" destination="xQO-b5-IX2" id="1nu-9g-95g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O6c-m7-JOO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1577.8625954198474" y="903.52112676056345"/>
         </scene>
-        <!--View Controller-->
+        <!--Suspected Hard Landing-->
         <scene sceneID="NeF-mr-FZZ">
             <objects>
-                <viewController id="Vms-Oj-WvC" sceneMemberID="viewController">
+                <viewController id="Vms-Oj-WvC" customClass="SuspectedHardLanding" customModule="AviaAssist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hq6-Xl-XiX">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -373,15 +380,18 @@
                         <color key="backgroundColor" name="Background"/>
                     </view>
                     <navigationItem key="navigationItem" id="Krf-7Y-LB3"/>
+                    <connections>
+                        <outlet property="lbl" destination="czT-3o-zqn" id="jpJ-DT-Poy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r4P-2k-UKQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2489.3129770992364" y="903.52112676056345"/>
         </scene>
-        <!--View Controller-->
+        <!--Briefing Scripts-->
         <scene sceneID="tza-vQ-KKm">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="bra-8w-teZ" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="bra-8w-teZ" customClass="BriefingScripts" customModule="AviaAssist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0DM-De-3Z1">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -394,7 +404,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Weather Conditions" cornerStyle="fixed"/>
                                 <connections>
-                                    <segue destination="CAE-w8-I9Z" kind="show" id="JpQ-ea-3i3"/>
+                                    <segue destination="X5b-HE-a2s" kind="show" id="8Cd-MV-Sel"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gkl-C8-k2R">
@@ -499,8 +509,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s6G-Oa-Qn2" userLabel="scriptPicker">
-                                <rect key="frame" x="36.666666666666657" y="318" width="320" height="216"/>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s6G-Oa-Qn2" userLabel="scriptPicker">
+                                <rect key="frame" x="0.0" y="286" width="185" height="149"/>
                             </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bjd-nQ-1w3"/>
@@ -517,12 +527,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8x1-E7-WAU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3430" y="-561"/>
+            <point key="canvasLocation" x="3429.770992366412" y="-561.26760563380287"/>
         </scene>
-        <!--View Controller-->
+        <!--Registrations-->
         <scene sceneID="DRj-3g-NjU">
             <objects>
-                <viewController id="BXQ-pL-GDs" customClass="ViewController" customModule="AviaAssist" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BXQ-pL-GDs" customClass="SIMRegistrations" customModule="AviaAssist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HYJ-tj-4nz">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -556,14 +566,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gJL-C7-Xi8">
-                                <rect key="frame" x="38" y="202" width="317" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="0.65474529660000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Aircrafts">
-                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SIM Registration Code:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32H-8d-1l4">
                                 <rect key="frame" x="38" y="450" width="194" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -578,6 +580,10 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7L1-mQ-KEN">
+                                <rect key="frame" x="55" y="211" width="189" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9E3-Ou-9ZV"/>
                         <color key="backgroundColor" name="Background"/>
@@ -588,10 +594,10 @@
             </objects>
             <point key="canvasLocation" x="3429.770992366412" y="181.69014084507043"/>
         </scene>
-        <!--View Controller-->
+        <!--Surface Conditions-->
         <scene sceneID="qLv-Jr-a6L">
             <objects>
-                <viewController id="lag-q2-MSN" sceneMemberID="viewController">
+                <viewController id="lag-q2-MSN" customClass="SurfaceConditions" customModule="AviaAssist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D7k-2V-rqk">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -684,10 +690,10 @@
             </objects>
             <point key="canvasLocation" x="4342.7480916030536" y="181.69014084507043"/>
         </scene>
-        <!--View Controller-->
+        <!--CTOT-->
         <scene sceneID="S2l-qm-k9D">
             <objects>
-                <viewController id="EeZ-Kz-Mil" sceneMemberID="viewController">
+                <viewController id="EeZ-Kz-Mil" customClass="CTOT" customModule="AviaAssist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="00L-Dx-nnl">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -699,41 +705,63 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter standard time of departure" textAlignment="natural" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cFQ-o7-cCL">
-                                <rect key="frame" x="44" y="178" width="295" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="0.65474529660000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter calculated time of takeoff" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bZE-La-0bG">
-                                <rect key="frame" x="44" y="228" width="295" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="0.65474529660000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Door close time:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0XC-Dc-neu">
-                                <rect key="frame" x="44" y="295" width="131" height="22"/>
+                                <rect key="frame" x="44" y="525" width="333" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Standard pushback time" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibc-6d-l7m">
-                                <rect key="frame" x="44" y="335" width="196" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Standard pushback time:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibc-6d-l7m">
+                                <rect key="frame" x="44" y="595" width="333" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter standart time of departure" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5BS-qG-3am">
+                                <rect key="frame" x="40" y="186" width="258" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter calculated time of takeoff" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgy-qJ-LU7">
+                                <rect key="frame" x="40" y="310" width="251" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="YE8-gc-zyk">
+                                <rect key="frame" x="145" y="357" width="106" height="36"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bV3-Bg-rXK">
+                                <rect key="frame" x="40" y="433" width="317" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.98186905690000004" green="0.98640179269999995" blue="1" alpha="0.20455870340000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit"/>
+                                <connections>
+                                    <action selector="onSubmitButtonPressed:" destination="EeZ-Kz-Mil" eventType="touchUpInside" id="2ak-fF-lUb"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="eUd-ca-jXC">
+                                <rect key="frame" x="145" y="236" width="100" height="35"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ymD-d4-a9X"/>
                         <color key="backgroundColor" name="Background"/>
                     </view>
                     <navigationItem key="navigationItem" id="4u7-ZB-sde"/>
+                    <connections>
+                        <outlet property="calculatedTimeOfTakeoffPicker" destination="YE8-gc-zyk" id="8gx-To-BMq"/>
+                        <outlet property="doorCloseTimeLabel" destination="0XC-Dc-neu" id="32k-tM-ybA"/>
+                        <outlet property="standardPushbackTimeLabel" destination="ibc-6d-l7m" id="PXW-kw-ndg"/>
+                        <outlet property="standardTimeOfDeparturePicker" destination="eUd-ca-jXC" id="gHl-3z-GNZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gcl-6e-4Wv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -748,7 +776,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="398" translatesAutoresizingMaskIntoConstraints="NO" id="DsC-kZ-60K">
-                                <rect key="frame" x="0.0" y="768.66666666666652" width="393.33333333333331" height="39.333333333333371"/>
+                                <rect key="frame" x="0.0" y="768.66666666666652" width="393" height="39.333333333333371"/>
                                 <string key="text">Note: All temperatures are in ºC and all altitudes are in Feet. Formula is based on ICAO Doc 8168, PANS-OPS, Volume I.
 This is not an official calculator, so, use at your own risk!!!</string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
@@ -756,7 +784,7 @@ This is not an official calculator, so, use at your own risk!!!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="385-F3-QVQ">
-                                <rect key="frame" x="30" y="212" width="159.66666666666666" height="335"/>
+                                <rect key="frame" x="30" y="186" width="159.66666666666666" height="335"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsd-MZ-MhJ" customClass="RoundedCornerView" customModule="AviaAssist" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="159.66666666666666" height="55"/>
@@ -839,13 +867,13 @@ ALTITUDES</string>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="THu-BE-beF">
-                                <rect key="frame" x="205" y="212" width="159.66666666666669" height="335"/>
+                                <rect key="frame" x="205" y="186" width="159.33333333333337" height="335"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PS9-Lq-iN0" customClass="RoundedCornerView" customModule="AviaAssist" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="159.66666666666666" height="55"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="159.33333333333334" height="55"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfJ-a4-9Pl">
-                                                <rect key="frame" x="30.333333333333343" y="6.3333333333333144" width="99" height="42.333333333333336"/>
+                                                <rect key="frame" x="30" y="6.3333333333333144" width="99" height="42.333333333333336"/>
                                                 <string key="text">CORRECTED
 ALTITUDES</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -872,10 +900,10 @@ ALTITUDES</string>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FXf-uH-r06" customClass="RoundedCornerView" customModule="AviaAssist" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="56" width="159.66666666666666" height="34"/>
+                                        <rect key="frame" x="0.0" y="56" width="159.33333333333334" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Corrected" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uot-VX-97i" userLabel="Fix1Corrected">
-                                                <rect key="frame" x="0.0" y="0.0" width="159.66666666666666" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="159.33333333333334" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="0.65474529660000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration" label="Corrected"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -900,10 +928,10 @@ ALTITUDES</string>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qEd-aj-lwp" customClass="RoundedCornerView" customModule="AviaAssist" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="91" width="159.66666666666666" height="34"/>
+                                        <rect key="frame" x="0.0" y="91" width="159.33333333333334" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Corrected" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6x-aO-LV8" userLabel="Fix2Corrected">
-                                                <rect key="frame" x="0.0" y="0.0" width="159.66666666666666" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="159.33333333333334" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="0.65474529660000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
@@ -927,10 +955,10 @@ ALTITUDES</string>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJs-XD-FCa" customClass="RoundedCornerView" customModule="AviaAssist" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="126" width="159.66666666666666" height="34"/>
+                                        <rect key="frame" x="0.0" y="126" width="159.33333333333334" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Corrected" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daj-Rd-syY" userLabel="Fix3Corrected">
-                                                <rect key="frame" x="0.0" y="0.0" width="159.66666666666666" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="159.33333333333334" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="0.65474529660000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
@@ -952,10 +980,10 @@ ALTITUDES</string>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gfb-CP-0it" customClass="RoundedCornerView" customModule="AviaAssist" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="161" width="159.66666666666666" height="34"/>
+                                        <rect key="frame" x="0.0" y="161" width="159.33333333333334" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Corrected" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gse-fY-wH8" userLabel="Fix4Corrected">
-                                                <rect key="frame" x="0.0" y="0.0" width="159.66666666666666" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="159.33333333333334" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="0.65474529660000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
@@ -981,10 +1009,10 @@ ALTITUDES</string>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uwf-QP-1Je" customClass="RoundedCornerView" customModule="AviaAssist" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="196" width="159.66666666666666" height="34"/>
+                                        <rect key="frame" x="0.0" y="196" width="159.33333333333334" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Corrected" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hCV-vb-IOh" userLabel="Fix5Corrected">
-                                                <rect key="frame" x="0.0" y="0.0" width="159.66666666666666" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="159.33333333333334" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="0.65474529660000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
@@ -1010,10 +1038,10 @@ ALTITUDES</string>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1CQ-DQ-gnW" customClass="RoundedCornerView" customModule="AviaAssist" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="231" width="159.66666666666666" height="34"/>
+                                        <rect key="frame" x="0.0" y="231" width="159.33333333333334" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Corrected" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eFK-CO-8RN" userLabel="Fix6Corrected">
-                                                <rect key="frame" x="0.0" y="0.0" width="159.66666666666666" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="159.33333333333334" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="0.65474529660000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
@@ -1039,10 +1067,10 @@ ALTITUDES</string>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LlQ-gn-kf7" customClass="RoundedCornerView" customModule="AviaAssist" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="265.99999999999994" width="159.66666666666666" height="34"/>
+                                        <rect key="frame" x="0.0" y="265.99999999999994" width="159.33333333333334" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Corrected" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pjO-E1-0ZA" userLabel="Fix7Corrected">
-                                                <rect key="frame" x="0.0" y="0.0" width="159.66666666666666" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="159.33333333333334" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="0.65474529660000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
@@ -1068,10 +1096,10 @@ ALTITUDES</string>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aWL-Df-5Y1" customClass="RoundedCornerView" customModule="AviaAssist" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="300.99999999999994" width="159.66666666666666" height="34"/>
+                                        <rect key="frame" x="0.0" y="300.99999999999994" width="159.33333333333334" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Corrected" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UOC-hi-5SM">
-                                                <rect key="frame" x="0.0" y="0.0" width="159.66666666666666" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="159.33333333333334" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="0.65474529655612246" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
@@ -1100,110 +1128,6 @@ ALTITUDES</string>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="170" id="jwi-jD-eDn"/>
                                 </constraints>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="aDG-ck-Xa6">
-                                <rect key="frame" x="30" y="597.66666666666652" width="333.33333333333331" height="101"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Pme-iX-ou5">
-                                        <rect key="frame" x="0.0" y="0.0" width="231.33333333333334" height="101"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kyA-0v-88D" customClass="RoundedCornerView" customModule="AviaAssist" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="231.33333333333334" height="45"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JNe-Zq-P3b">
-                                                        <rect key="frame" x="0.0" y="0.0" width="231.33333333333334" height="45"/>
-                                                        <color key="backgroundColor" name="Buttons"/>
-                                                        <color key="tintColor" name="AccentColor"/>
-                                                        <string key="text">AIRPORT TEMPERATURE
-(°C)</string>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" name="AccentColor"/>
-                                                <constraints>
-                                                    <constraint firstItem="JNe-Zq-P3b" firstAttribute="centerY" secondItem="kyA-0v-88D" secondAttribute="centerY" id="R29-Mv-ZQK"/>
-                                                    <constraint firstItem="JNe-Zq-P3b" firstAttribute="top" secondItem="kyA-0v-88D" secondAttribute="top" id="W2s-B3-LDV"/>
-                                                    <constraint firstItem="JNe-Zq-P3b" firstAttribute="centerX" secondItem="kyA-0v-88D" secondAttribute="centerX" id="p5H-Sr-V5X"/>
-                                                    <constraint firstItem="JNe-Zq-P3b" firstAttribute="leading" secondItem="kyA-0v-88D" secondAttribute="leading" id="tVa-3z-zCU"/>
-                                                </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Qs-kP-OEV" customClass="RoundedCornerView" customModule="AviaAssist" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="46" width="231.33333333333334" height="55"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lhf-kO-DaD">
-                                                        <rect key="frame" x="0.0" y="0.0" width="231.33333333333334" height="50"/>
-                                                        <color key="backgroundColor" name="Buttons"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="50" id="vo7-LA-53n"/>
-                                                        </constraints>
-                                                        <string key="text">AIRPORT ELEVATION
-(FT)</string>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" name="AccentColor"/>
-                                                <constraints>
-                                                    <constraint firstItem="Lhf-kO-DaD" firstAttribute="top" secondItem="8Qs-kP-OEV" secondAttribute="top" id="2UV-zq-wh5"/>
-                                                    <constraint firstAttribute="bottom" secondItem="Lhf-kO-DaD" secondAttribute="bottom" constant="5" id="MAv-dQ-9Ku"/>
-                                                    <constraint firstItem="Lhf-kO-DaD" firstAttribute="centerX" secondItem="8Qs-kP-OEV" secondAttribute="centerX" id="Txy-uM-ouy"/>
-                                                    <constraint firstItem="Lhf-kO-DaD" firstAttribute="leading" secondItem="8Qs-kP-OEV" secondAttribute="leading" id="eyb-k1-Ysv"/>
-                                                    <constraint firstItem="Lhf-kO-DaD" firstAttribute="centerY" secondItem="8Qs-kP-OEV" secondAttribute="centerY" id="hRH-KL-C36"/>
-                                                </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gt4-Sg-1Kt">
-                                        <rect key="frame" x="233.33333333333331" y="0.0" width="100" height="101"/>
-                                        <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Temp." adjustsFontForContentSizeCategory="YES" minimumFontSize="9" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="zcw-ny-t4Y">
-                                                <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
-                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="100" id="2Er-Zs-6fW"/>
-                                                    <constraint firstAttribute="height" constant="50" id="AH6-Fk-uTW"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Elev." adjustsFontForContentSizeCategory="YES" minimumFontSize="9" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="XK4-YH-ToR" userLabel="AirportElev">
-                                                <rect key="frame" x="0.0" y="51" width="100" height="50"/>
-                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="9ow-dw-8VX"/>
-                                                    <constraint firstAttribute="width" constant="100" id="b97-fy-P9v"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                                            </textField>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Cold Temperature Correction" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDe-5e-ijh">
                                 <rect key="frame" x="0.0" y="121" width="393.33333333333348" height="37"/>
@@ -1243,6 +1167,110 @@ ALTITUDES</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="aDG-ck-Xa6">
+                                <rect key="frame" x="31" y="553" width="333" height="101"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Pme-iX-ou5">
+                                        <rect key="frame" x="0.0" y="0.0" width="231" height="101"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kyA-0v-88D" customClass="RoundedCornerView" customModule="AviaAssist" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="231" height="45"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JNe-Zq-P3b">
+                                                        <rect key="frame" x="0.0" y="0.0" width="231" height="45"/>
+                                                        <color key="backgroundColor" name="Buttons"/>
+                                                        <color key="tintColor" name="AccentColor"/>
+                                                        <string key="text">AIRPORT TEMPERATURE
+(°C)</string>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="JNe-Zq-P3b" firstAttribute="centerY" secondItem="kyA-0v-88D" secondAttribute="centerY" id="R29-Mv-ZQK"/>
+                                                    <constraint firstItem="JNe-Zq-P3b" firstAttribute="top" secondItem="kyA-0v-88D" secondAttribute="top" id="W2s-B3-LDV"/>
+                                                    <constraint firstItem="JNe-Zq-P3b" firstAttribute="centerX" secondItem="kyA-0v-88D" secondAttribute="centerX" id="p5H-Sr-V5X"/>
+                                                    <constraint firstItem="JNe-Zq-P3b" firstAttribute="leading" secondItem="kyA-0v-88D" secondAttribute="leading" id="tVa-3z-zCU"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Qs-kP-OEV" customClass="RoundedCornerView" customModule="AviaAssist" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="46" width="231" height="55"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lhf-kO-DaD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="231" height="50"/>
+                                                        <color key="backgroundColor" name="Buttons"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="vo7-LA-53n"/>
+                                                        </constraints>
+                                                        <string key="text">AIRPORT ELEVATION
+(FT)</string>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Lhf-kO-DaD" firstAttribute="top" secondItem="8Qs-kP-OEV" secondAttribute="top" id="2UV-zq-wh5"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Lhf-kO-DaD" secondAttribute="bottom" constant="5" id="MAv-dQ-9Ku"/>
+                                                    <constraint firstItem="Lhf-kO-DaD" firstAttribute="centerX" secondItem="8Qs-kP-OEV" secondAttribute="centerX" id="Txy-uM-ouy"/>
+                                                    <constraint firstItem="Lhf-kO-DaD" firstAttribute="leading" secondItem="8Qs-kP-OEV" secondAttribute="leading" id="eyb-k1-Ysv"/>
+                                                    <constraint firstItem="Lhf-kO-DaD" firstAttribute="centerY" secondItem="8Qs-kP-OEV" secondAttribute="centerY" id="hRH-KL-C36"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gt4-Sg-1Kt">
+                                        <rect key="frame" x="233" y="0.0" width="100" height="101"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Temp." adjustsFontForContentSizeCategory="YES" minimumFontSize="9" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="zcw-ny-t4Y">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="2Er-Zs-6fW"/>
+                                                    <constraint firstAttribute="height" constant="50" id="AH6-Fk-uTW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Elev." adjustsFontForContentSizeCategory="YES" minimumFontSize="9" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="XK4-YH-ToR" userLabel="AirportElev">
+                                                <rect key="frame" x="0.0" y="51" width="100" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="9ow-dw-8VX"/>
+                                                    <constraint firstAttribute="width" constant="100" id="b97-fy-P9v"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wSv-fT-vgK"/>
                         <color key="backgroundColor" name="Background"/>
@@ -1301,10 +1329,10 @@ ALTITUDES</string>
             </objects>
             <point key="canvasLocation" x="3350.3816793893129" y="903.52112676056345"/>
         </scene>
-        <!--View Controller-->
+        <!--Change Of-->
         <scene sceneID="i3H-md-LFQ">
             <objects>
-                <viewController id="rbX-40-qja" sceneMemberID="viewController">
+                <viewController id="rbX-40-qja" customClass="ChangeOf" customModule="AviaAssist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gs4-9Q-m0Z">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1329,15 +1357,18 @@ ALTITUDES</string>
                         <color key="backgroundColor" name="Background"/>
                     </view>
                     <navigationItem key="navigationItem" id="7sx-ls-gAa"/>
+                    <connections>
+                        <outlet property="lbl" destination="SBp-RJ-RPr" id="I3W-jl-N2p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1LK-3R-NR4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-225.19083969465649" y="-578.16901408450713"/>
         </scene>
-        <!--View Controller-->
+        <!--Special Services-->
         <scene sceneID="GJl-qn-t2l">
             <objects>
-                <viewController id="iIW-Cx-tWG" sceneMemberID="viewController">
+                <viewController id="iIW-Cx-tWG" customClass="SpecialServices" customModule="AviaAssist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iTd-Lp-G09">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1362,15 +1393,18 @@ ALTITUDES</string>
                         <color key="backgroundColor" name="Background"/>
                     </view>
                     <navigationItem key="navigationItem" id="5tz-Bc-oYk"/>
+                    <connections>
+                        <outlet property="lbl" destination="U9V-4O-U4l" id="Sae-l8-R3x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BrR-tL-NwR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="651" y="-578"/>
         </scene>
-        <!--View Controller-->
+        <!--Introduction-->
         <scene sceneID="Nao-H6-7XY">
             <objects>
-                <viewController id="2BF-uJ-9dN" sceneMemberID="viewController">
+                <viewController id="2BF-uJ-9dN" customClass="Introduction" customModule="AviaAssist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pcW-t1-Ma2">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1402,15 +1436,19 @@ ALTITUDES</string>
                         <color key="backgroundColor" name="Background"/>
                     </view>
                     <navigationItem key="navigationItem" id="7dM-OX-Vmm"/>
+                    <connections>
+                        <outlet property="lbl" destination="kTN-Ta-6oW" id="Xj9-Cf-HA7"/>
+                        <outlet property="view" destination="kTN-Ta-6oW" id="8bn-2t-gCR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JLA-zj-SLi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1563" y="-1385"/>
         </scene>
-        <!--View Controller-->
+        <!--Arrivals And Customs-->
         <scene sceneID="TCV-d5-b6V">
             <objects>
-                <viewController id="xSr-bC-W82" sceneMemberID="viewController">
+                <viewController id="xSr-bC-W82" customClass="ArrivalsAndCustoms" customModule="AviaAssist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cRZ-8d-b6b">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1435,15 +1473,18 @@ ALTITUDES</string>
                         <color key="backgroundColor" name="Background"/>
                     </view>
                     <navigationItem key="navigationItem" id="K4s-YR-PN3"/>
+                    <connections>
+                        <outlet property="lbl" destination="cfX-oy-J22" id="S3k-B9-rl7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ngv-cF-W7b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1563" y="-578"/>
         </scene>
-        <!--View Controller-->
+        <!--Turbulance-->
         <scene sceneID="bwA-bp-rNc">
             <objects>
-                <viewController id="Jse-Av-h5o" sceneMemberID="viewController">
+                <viewController id="Jse-Av-h5o" customClass="Turbulance" customModule="AviaAssist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6iB-Db-7ai">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1468,15 +1509,18 @@ ALTITUDES</string>
                         <color key="backgroundColor" name="Background"/>
                     </view>
                     <navigationItem key="navigationItem" id="Bti-7S-wAU"/>
+                    <connections>
+                        <outlet property="lbl" destination="cAR-84-HFr" id="glx-jr-Qxf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c7W-d7-j8C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="650" y="-1385"/>
         </scene>
-        <!--View Controller-->
+        <!--Deicing-->
         <scene sceneID="jIw-wU-U4x">
             <objects>
-                <viewController id="eRL-Rg-oRp" sceneMemberID="viewController">
+                <viewController id="eRL-Rg-oRp" customClass="Deicing" customModule="AviaAssist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="elN-Af-bPt">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1501,15 +1545,18 @@ ALTITUDES</string>
                         <color key="backgroundColor" name="Background"/>
                     </view>
                     <navigationItem key="navigationItem" id="Fcm-eY-aPJ"/>
+                    <connections>
+                        <outlet property="lbl" destination="z60-1H-cz4" id="ayd-vQ-fWX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPa-lp-zzz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-225" y="-1385"/>
         </scene>
-        <!--View Controller-->
+        <!--Weather Conditions-->
         <scene sceneID="WiI-vp-UxH">
             <objects>
-                <viewController id="X5b-HE-a2s" sceneMemberID="viewController">
+                <viewController id="X5b-HE-a2s" customClass="WeatherConditions" customModule="AviaAssist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tCt-TZ-urW">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1534,15 +1581,18 @@ ALTITUDES</string>
                         <color key="backgroundColor" name="Background"/>
                     </view>
                     <navigationItem key="navigationItem" id="Yc5-sz-m6k"/>
+                    <connections>
+                        <outlet property="lbl" destination="hda-Sg-69H" id="s6D-Mr-fjO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PVh-H2-JHu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1147.3282442748091" y="-1385.2112676056338"/>
         </scene>
-        <!--View Controller-->
+        <!--Emergency-->
         <scene sceneID="IAQ-Z8-Cf7">
             <objects>
-                <viewController id="otB-xG-JMu" sceneMemberID="viewController">
+                <viewController id="otB-xG-JMu" customClass="Emergency" customModule="AviaAssist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FRS-Us-aub">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1567,6 +1617,9 @@ ALTITUDES</string>
                         <color key="backgroundColor" name="Background"/>
                     </view>
                     <navigationItem key="navigationItem" id="wIq-3o-eD5"/>
+                    <connections>
+                        <outlet property="lbl" destination="mSg-aZ-lhk" id="fLt-8P-bil"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c6z-3M-zMe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

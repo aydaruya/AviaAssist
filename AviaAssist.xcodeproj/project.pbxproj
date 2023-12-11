@@ -10,6 +10,19 @@
 		7AA762172B21608900A87295 /* ColdTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA762162B21608900A87295 /* ColdTemp.swift */; };
 		7AA7621B2B217BB900A87295 /* AutomatedCFRCheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA7621A2B217BB900A87295 /* AutomatedCFRCheckInViewController.swift */; };
 		7AA7621D2B21A74600A87295 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA7621C2B21A74600A87295 /* Dashboard.swift */; };
+		7AEB50172B269F2300EA2EB3 /* WeatherConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEB50162B269F2300EA2EB3 /* WeatherConditions.swift */; };
+		7AEB50192B269F5800EA2EB3 /* Deicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEB50182B269F5800EA2EB3 /* Deicing.swift */; };
+		7AEB501B2B269F6F00EA2EB3 /* Turbulance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEB501A2B269F6F00EA2EB3 /* Turbulance.swift */; };
+		7AEB501D2B269F7F00EA2EB3 /* Introduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEB501C2B269F7F00EA2EB3 /* Introduction.swift */; };
+		7AEB501F2B269F9800EA2EB3 /* Emergency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEB501E2B269F9800EA2EB3 /* Emergency.swift */; };
+		7AEB50212B269FB300EA2EB3 /* SpecialServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEB50202B269FB300EA2EB3 /* SpecialServices.swift */; };
+		7AEB50232B269FCF00EA2EB3 /* ArrivalsAndCustoms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEB50222B269FCF00EA2EB3 /* ArrivalsAndCustoms.swift */; };
+		7AEB50252B269FF200EA2EB3 /* SuspectedHardLanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEB50242B269FF200EA2EB3 /* SuspectedHardLanding.swift */; };
+		7AEB50272B26A01100EA2EB3 /* CargoIMPCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEB50262B26A01100EA2EB3 /* CargoIMPCodes.swift */; };
+		7AEB50292B26A04300EA2EB3 /* SIMRegistrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEB50282B26A04300EA2EB3 /* SIMRegistrations.swift */; };
+		7AEB502B2B26A05F00EA2EB3 /* SurfaceConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEB502A2B26A05F00EA2EB3 /* SurfaceConditions.swift */; };
+		7AEB502D2B26A07900EA2EB3 /* CTOT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEB502C2B26A07900EA2EB3 /* CTOT.swift */; };
+		7AEB502F2B26A49500EA2EB3 /* ChangeOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEB502E2B26A49500EA2EB3 /* ChangeOf.swift */; };
 		C5CE70122B03EF6C009CB360 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CE70112B03EF6C009CB360 /* AppDelegate.swift */; };
 		C5CE70142B03EF6C009CB360 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CE70132B03EF6C009CB360 /* SceneDelegate.swift */; };
 		C5CE70162B03EF6C009CB360 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CE70152B03EF6C009CB360 /* ViewController.swift */; };
@@ -44,6 +57,19 @@
 		7AA762162B21608900A87295 /* ColdTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColdTemp.swift; sourceTree = "<group>"; };
 		7AA7621A2B217BB900A87295 /* AutomatedCFRCheckInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomatedCFRCheckInViewController.swift; sourceTree = "<group>"; };
 		7AA7621C2B21A74600A87295 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		7AEB50162B269F2300EA2EB3 /* WeatherConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherConditions.swift; sourceTree = "<group>"; };
+		7AEB50182B269F5800EA2EB3 /* Deicing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deicing.swift; sourceTree = "<group>"; };
+		7AEB501A2B269F6F00EA2EB3 /* Turbulance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Turbulance.swift; sourceTree = "<group>"; };
+		7AEB501C2B269F7F00EA2EB3 /* Introduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Introduction.swift; sourceTree = "<group>"; };
+		7AEB501E2B269F9800EA2EB3 /* Emergency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emergency.swift; sourceTree = "<group>"; };
+		7AEB50202B269FB300EA2EB3 /* SpecialServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialServices.swift; sourceTree = "<group>"; };
+		7AEB50222B269FCF00EA2EB3 /* ArrivalsAndCustoms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalsAndCustoms.swift; sourceTree = "<group>"; };
+		7AEB50242B269FF200EA2EB3 /* SuspectedHardLanding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuspectedHardLanding.swift; sourceTree = "<group>"; };
+		7AEB50262B26A01100EA2EB3 /* CargoIMPCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CargoIMPCodes.swift; sourceTree = "<group>"; };
+		7AEB50282B26A04300EA2EB3 /* SIMRegistrations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIMRegistrations.swift; sourceTree = "<group>"; };
+		7AEB502A2B26A05F00EA2EB3 /* SurfaceConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfaceConditions.swift; sourceTree = "<group>"; };
+		7AEB502C2B26A07900EA2EB3 /* CTOT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTOT.swift; sourceTree = "<group>"; };
+		7AEB502E2B26A49500EA2EB3 /* ChangeOf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeOf.swift; sourceTree = "<group>"; };
 		C5CE700E2B03EF6C009CB360 /* AviaAssist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AviaAssist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5CE70112B03EF6C009CB360 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5CE70132B03EF6C009CB360 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +147,19 @@
 				7AA7621C2B21A74600A87295 /* Dashboard.swift */,
 				C5DC96BE2B22002200CAD0CC /* RestTime.swift */,
 				C5DC96C42B22317000CAD0CC /* BriefingScripts.swift */,
+				7AEB50162B269F2300EA2EB3 /* WeatherConditions.swift */,
+				7AEB50182B269F5800EA2EB3 /* Deicing.swift */,
+				7AEB501A2B269F6F00EA2EB3 /* Turbulance.swift */,
+				7AEB501C2B269F7F00EA2EB3 /* Introduction.swift */,
+				7AEB501E2B269F9800EA2EB3 /* Emergency.swift */,
+				7AEB50202B269FB300EA2EB3 /* SpecialServices.swift */,
+				7AEB50222B269FCF00EA2EB3 /* ArrivalsAndCustoms.swift */,
+				7AEB50242B269FF200EA2EB3 /* SuspectedHardLanding.swift */,
+				7AEB50262B26A01100EA2EB3 /* CargoIMPCodes.swift */,
+				7AEB50282B26A04300EA2EB3 /* SIMRegistrations.swift */,
+				7AEB502A2B26A05F00EA2EB3 /* SurfaceConditions.swift */,
+				7AEB502C2B26A07900EA2EB3 /* CTOT.swift */,
+				7AEB502E2B26A49500EA2EB3 /* ChangeOf.swift */,
 			);
 			path = AviaAssist;
 			sourceTree = "<group>";
@@ -274,11 +313,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5CE70162B03EF6C009CB360 /* ViewController.swift in Sources */,
+				7AEB50252B269FF200EA2EB3 /* SuspectedHardLanding.swift in Sources */,
 				7AA7621B2B217BB900A87295 /* AutomatedCFRCheckInViewController.swift in Sources */,
 				7AA762172B21608900A87295 /* ColdTemp.swift in Sources */,
+				7AEB50292B26A04300EA2EB3 /* SIMRegistrations.swift in Sources */,
+				7AEB502B2B26A05F00EA2EB3 /* SurfaceConditions.swift in Sources */,
 				C5CE70122B03EF6C009CB360 /* AppDelegate.swift in Sources */,
+				7AEB502D2B26A07900EA2EB3 /* CTOT.swift in Sources */,
+				7AEB501B2B269F6F00EA2EB3 /* Turbulance.swift in Sources */,
+				7AEB50232B269FCF00EA2EB3 /* ArrivalsAndCustoms.swift in Sources */,
+				7AEB50212B269FB300EA2EB3 /* SpecialServices.swift in Sources */,
 				7AA7621D2B21A74600A87295 /* Dashboard.swift in Sources */,
+				7AEB502F2B26A49500EA2EB3 /* ChangeOf.swift in Sources */,
+				7AEB50192B269F5800EA2EB3 /* Deicing.swift in Sources */,
+				7AEB501D2B269F7F00EA2EB3 /* Introduction.swift in Sources */,
+				7AEB50272B26A01100EA2EB3 /* CargoIMPCodes.swift in Sources */,
+				7AEB50172B269F2300EA2EB3 /* WeatherConditions.swift in Sources */,
 				C5DC96BF2B22002200CAD0CC /* RestTime.swift in Sources */,
+				7AEB501F2B269F9800EA2EB3 /* Emergency.swift in Sources */,
 				C5DC96C52B22317000CAD0CC /* BriefingScripts.swift in Sources */,
 				C5CE70142B03EF6C009CB360 /* SceneDelegate.swift in Sources */,
 			);
