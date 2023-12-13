@@ -16,7 +16,7 @@ class RestTime: UIViewController {
     @IBOutlet weak var submitButton: UIButton!
     
     @objc func submit() {
-        // Check if all fields have valid input
+        //Check if all fields have valid input
         guard let numberOfPilotsText = numPilotsTextField.text,
               let numberOfPilots = Int(numberOfPilotsText),
               let hoursText = hoursTextField.text,
@@ -40,7 +40,7 @@ class RestTime: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Connect the submitButton to the submit function
+        //connecting the submitButton to the submit function
         submitButton.addTarget(self, action: #selector(submit), for: .touchUpInside)
     }
 }

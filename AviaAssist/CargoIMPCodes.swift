@@ -12,7 +12,7 @@ class CargoIMPCodes: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     @IBOutlet weak var codePickerView: UIPickerView!
     @IBOutlet weak var definitionLabel: UILabel!
     
-    // This array should contain all the codes and their corresponding definitions
+    //This array contains all the codes and their definitions
     let codesAndDefinitions: [(code: String, definition: String)] = [
         // Populate this array with your codes and definitions
         ("ACT", "Certified Active Temperature-Controlled Thermal Container"),

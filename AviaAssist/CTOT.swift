@@ -14,24 +14,24 @@ class CTOT: UIViewController {
     @IBOutlet weak var doorCloseTimeLabel: UILabel!
     @IBOutlet weak var standardPushbackTimeLabel: UILabel!
 
-    // This function is called when the submit button is pressed
+    //This function is called when the submit button is pressed
     @IBAction func onSubmitButtonPressed(_ sender: UIButton) {
         calculateTimes()
     }
     
     private func calculateTimes() {
-        // Adjust these values to match your airline's operational standards
-        let doorCloseMinutesBeforeDeparture = 10 // For example, door closes 10 minutes before departure
-        let pushbackMinutesBeforeDeparture = -15 // For example, pushback is 15 minutes after the standard time of departure
+        //Currently dummy values for
+        let doorCloseMinutesBeforeDeparture = 10 //door closes 10 minutes before departure
+        let pushbackMinutesBeforeDeparture = -15 //pushback is 15 minutes after the standard time of departure
 
         let standardTimeOfDeparture = standardTimeOfDeparturePicker.date
         let calculatedTimeOfTakeoff = calculatedTimeOfTakeoffPicker.date
         
-        // Calculate door close time and pushback time based on standardTimeOfDeparture
+        //calculate door close time and pushback time based on standardTimeOfDeparture
         let doorCloseTime = Calendar.current.date(byAdding: .minute, value: -doorCloseMinutesBeforeDeparture, to: standardTimeOfDeparture)
         let standardPushbackTime = Calendar.current.date(byAdding: .minute, value: pushbackMinutesBeforeDeparture, to: calculatedTimeOfTakeoff)
 
-        // Update the labels with the calculated times
+        //update the labels with the calculated times
         let timeFormatter = DateFormatter()
         timeFormatter.timeStyle = .short
         

@@ -13,7 +13,7 @@ class Turbulance: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lbl.text = "Değerli misafirler kaptan konuşuyor, .....….*.....…. nedeni ile pisti pas geçtik. *HAVA KOŞULLARI Uçuşumuz normal sürecinde devam etmektedir. İniş için tekrar yaklaşma yapacağız. Anlayışınız için teşekkür ederiz. Dear guests this is the captain speaking, we did cancel our approach due to .....….*.....…. * WEATHER CONDITIONS Our flight continues in normal progress. We will start another approach shortly. Thank you for your understanding."
+        lbl.text = "Değerli misafirler kaptan konuşuyor, HAVA KOŞULLARI nedeniyle biraz türbülans yaşıyoruz. Bu durumun geçici olduğunu ve en kısa sürede normale döneceğimizi belirtmek isterim. Sabrınız ve anlayışınız için teşekkür ederiz.\n\nDear guests, this is the captain speaking. We are experiencing some turbulence due to WEATHER CONDITIONS, which I assure you is temporary and should subside shortly. Thank you for your patience and understanding."
     }
    
 }

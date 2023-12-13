@@ -13,7 +13,7 @@ class SpecialServices: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lbl.text = "Değerli misafirler kaptan konuşuyor, .....….*.....…. nedeni ile pisti pas geçtik. *HAVA KOŞULLARI Uçuşumuz normal sürecinde devam etmektedir. İniş için tekrar yaklaşma yapacağız. Anlayışınız için teşekkür ederiz. Dear guests this is the captain speaking, we did cancel our approach due to .....….*.....…. * WEATHER CONDITIONS Our flight continues in normal progress. We will start another approach shortly. Thank you for your understanding."
+        lbl.text = "Değerli yolcularımız, uçuşunuzun keyifli ve rahat geçmesi için özel hizmetlerimiz hakkında sizi bilgilendirmek isteriz. Uçuşunuz sırasında herhangi bir tıbbi yardıma ihtiyaç duymanız durumunda, uçakta ilk yardım malzemelerimiz ve gerekli eğitime sahip personelimiz hazır bulunmaktadır. Ayrıca, engelli veya hareket kabiliyeti kısıtlı yolcularımız için özel hizmetlerimiz mevcuttur. Lütfen ihtiyaç duyduğunuz herhangi bir yardım için bize ulaşmaktan çekinmeyin.\n\nDear passengers, we would like to inform you about the special services available to ensure your flight is enjoyable and comfortable. Should you need any medical assistance during your flight, we have first aid supplies and trained personnel on board. We also offer special services for disabled or mobility-impaired passengers. Do not hesitate to contact us for any assistance you may need."
     }
    
 }

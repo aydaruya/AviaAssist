@@ -13,7 +13,7 @@ class Introduction: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lbl.text = "Değerli misafirler kaptan konuşuyor, .....….*.....…. nedeni ile pisti pas geçtik. *HAVA KOŞULLARI Uçuşumuz normal sürecinde devam etmektedir. İniş için tekrar yaklaşma yapacağız. Anlayışınız için teşekkür ederiz. Dear guests this is the captain speaking, we did cancel our approach due to .....….*.....…. * WEATHER CONDITIONS Our flight continues in normal progress. We will start another approach shortly. Thank you for your understanding."
+        lbl.text = "Değerli misafirler, kaptanınız olarak sizlere hoş geldiniz demek istiyorum. Bu uçuşumuzda sizlere hizmet verecek olmaktan büyük mutluluk duyuyorum. Uçuş ekibimiz ve ben, konforunuz ve güvenliğiniz için buradayız. Uçuş süremiz boyunca herhangi bir ihtiyacınız olursa lütfen bize bildirin. Şimdi kemerlerinizi bağlayın ve rahat bir uçuş geçirmenizi dilerim.\n\nDear guests, as your captain, I would like to welcome you aboard. It's a great pleasure to serve you on this flight. Our crew and I are here for your comfort and safety. Please let us know if you need anything during our time in the air. Now, please fasten your seatbelts and enjoy a comfortable flight."
     }
    
 }

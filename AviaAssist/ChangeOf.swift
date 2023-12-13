@@ -13,7 +13,8 @@ class ChangeOf: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lbl.text = "Değerli misafirler kaptan konuşuyor, .....….*.....…. nedeni ile pisti pas geçtik. *HAVA KOŞULLARI Uçuşumuz normal sürecinde devam etmektedir. İniş için tekrar yaklaşma yapacağız. Anlayışınız için teşekkür ederiz. Dear guests this is the captain speaking, we did cancel our approach due to .....….*.....…. * WEATHER CONDITIONS Our flight continues in normal progress. We will start another approach shortly. Thank you for your understanding."
+        lbl.text = "Değerli yolcularımız, kaptanınız konuşuyor. Hava koşulları ve hava trafiği nedeniyle uçuş rotamızda bir değişiklik yapmamız gerekiyor. Bu durum varış süremizi az bir süre uzatabilir. Anlayışınız için teşekkür eder, rahat bir uçuş geçirmenizi dileriz.\n\nDear passengers, this is your captain speaking. Due to weather conditions and air traffic, we need to make a change in our flight path. This may slightly extend our arrival time. Thank you for your understanding and we wish you a comfortable flight."
+        
     }
    
 }

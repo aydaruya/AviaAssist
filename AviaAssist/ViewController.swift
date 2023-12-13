@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     }
     
     
-        var pickerData = ["Weather Conditions", "Deicing or Delays", "Turbulance", "Introduction", "Emergency Procedures", "Change of Flight Path", "Special Services", "Arrivals and Customs"]
+       // var pickerData = ["Weather Conditions", "Deicing or Delays", "Turbulance", "Introduction", "Emergency Procedures", "Change of Flight Path", "Special Services", "Arrivals and Customs"]
     
 }
 

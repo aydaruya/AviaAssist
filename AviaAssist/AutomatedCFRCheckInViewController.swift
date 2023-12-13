@@ -2,7 +2,6 @@ import UIKit
 
 class AutomatedCFRCheckInViewController: UIViewController {
 
-    // Connect these via the storyboard
     @IBOutlet weak var thyIDTextField: UITextField!
     @IBOutlet weak var cfrPasswordTextField: UITextField!
 
@@ -11,45 +10,44 @@ class AutomatedCFRCheckInViewController: UIViewController {
         // Additional setup if needed
     }
 
-    // This action is connected to the "Generate Password" button
+    //Generate Password button
     @IBAction func generatePasswordTapped(_ sender: UIButton) {
-        // Ensure the inputs are valid (non-empty, etc.)
+        //used gaurd statement here to make sure that the id is not empty
         guard let thyID = thyIDTextField.text, !thyID.isEmpty,
               let cfrPassword = cfrPasswordTextField.text, !cfrPassword.isEmpty else {
-            // Show error message if inputs are invalid
+            //error message if invalid
             presentAlert(withTitle: "Error", message: "Please enter all required fields")
             return
         }
 
-        // Generate the custom phone number using the inputs
+        //generate the custom phone number using the inputs
         let customPhoneNumber = generateCustomPhoneNumber(thyID: thyID, cfrPassword: cfrPassword)
 
-        // Present the result in a pop-up from the bottom
+        //present the result in a pop-up from the bottom
         let alertController = UIAlertController(title: "Custom Phone Number", message: "Call this number: \(customPhoneNumber)", preferredStyle: .actionSheet)
 
         let callAction = UIAlertAction(title: "Call", style: .default) { _ in
-            // Here you can initiate the phone call if desired
+            //Using URL function to initiate the phone call if desired
             if let url = URL(string: "tel://\(customPhoneNumber)"), UIApplication.shared.canOpenURL(url) {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
             }
         }
-
+        //add cancel
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
-
+        //call the actions
         alertController.addAction(callAction)
         alertController.addAction(cancelAction)
-
+        //present the actions
         present(alertController, animated: true)
     }
 
-    // This is a placeholder for your custom phone number generation logic
+    //This is the generation
     func generateCustomPhoneNumber(thyID: String, cfrPassword: String) -> String {
-        // Implement your custom phone number generation logic here
-        // This is a dummy implementation
-        return "1-800-**1\(thyID.suffix(3))**2\(cfrPassword.prefix(3))"
+        //for now this is a dummy implementation
+        return "1-800-242**1**\(thyID.suffix(3))**2**\(cfrPassword.prefix(3))"
     }
 
-    // Helper function to present alerts
+    //helper function to present alerts
     func presentAlert(withTitle title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default))

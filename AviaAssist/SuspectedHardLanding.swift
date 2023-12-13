@@ -13,7 +13,7 @@ class SuspectedHardLanding: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lbl.text = "Değerli misafirler kaptan konuşuyor, .....….*.....…. nedeni ile pisti pas geçtik. *HAVA KOŞULLARI Uçuşumuz normal sürecinde devam etmektedir. İniş için tekrar yaklaşma yapacağız. Anlayışınız için teşekkür ederiz. Dear guests this is the captain speaking, we did cancel our approach due to .....….*.....…. * WEATHER CONDITIONS Our flight continues in normal progress. We will start another approach shortly. Thank you for your understanding."
+        lbl.text = "Değerli yolcularımız, kaptanınız konuşuyor. Önümüzdeki inişimizin biraz sert olabileceğini belirtmek isterim. Güvenliğiniz için, lütfen kemerlerinizi sıkıca bağlayın ve iniş sırasında oturduğunuz yerde kalın. Kabin ekibimiz, iniş için gerekli tüm güvenlik önlemlerini almıştır. Anlayışınız ve işbirliğiniz için teşekkür ederiz.\n\nDear passengers, this is your captain speaking. I would like to inform you that our upcoming landing may be a bit rough. For your safety, please fasten your seatbelts securely and remain seated during the landing. Our cabin crew has taken all necessary safety precautions for the landing. Thank you for your understanding and cooperation."
     }
    
 }

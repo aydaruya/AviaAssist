@@ -13,9 +13,10 @@ class WeatherConditions: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lbl.text = "Değerli misafirler kaptan konuşuyor, .....….*.....…. nedeni ile pisti pas geçtik. *HAVA KOŞULLARI Uçuşumuz normal sürecinde devam etmektedir. İniş için tekrar yaklaşma yapacağız. Anlayışınız için teşekkür ederiz. Dear guests this is the captain speaking, we did cancel our approach due to .....….*.....…. * WEATHER CONDITIONS Our flight continues in normal progress. We will start another approach shortly. Thank you for your understanding."
+        lbl.text = "Değerli misafirler kaptan konuşuyor, Hava Kosullari nedeni ile pisti pas geçtik. HAVA KOŞULLARI Uçuşumuz normal sürecinde devam etmektedir. İniş için tekrar yaklaşma yapacağız. Anlayışınız için teşekkür ederiz.\n\nDear guests this is the captain speaking, we did cancel our approach due to Weather Conditions. Our flight continues in normal progress. We will start another approach shortly. Thank you for your understanding."
+        
     }
-   
+    
 }
     /*
     // MARK: - Navigation

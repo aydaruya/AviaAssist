@@ -13,7 +13,7 @@ class Emergency: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lbl.text = "Değerli misafirler kaptan konuşuyor, .....….*.....…. nedeni ile pisti pas geçtik. *HAVA KOŞULLARI Uçuşumuz normal sürecinde devam etmektedir. İniş için tekrar yaklaşma yapacağız. Anlayışınız için teşekkür ederiz. Dear guests this is the captain speaking, we did cancel our approach due to .....….*.....…. * WEATHER CONDITIONS Our flight continues in normal progress. We will start another approach shortly. Thank you for your understanding."
+        lbl.text = "Değerli yolcularımız, acil durum prosedürlerimiz hakkında sizi bilgilendirmek istiyorum. Uçağımızda toplam ... adet acil çıkış kapısı bulunmaktadır. Oksijen maskeleri basınç düşüşü durumunda otomatik olarak açılacaktır. Yelek tipi can yeleklerimiz koltuğunuzun altında yer almakta olup, sadece kabin ekibinin talimatları üzerine kullanılmalıdır. Acil durumda sakin kalmak ve mürettebatımızın talimatlarını takip etmek hayati önem taşımaktadır. \n\nDear passengers, I would like to inform you about our emergency procedures. There are a total of ... emergency exits on this aircraft. Oxygen masks will drop down automatically if there is a decrease in cabin pressure. Life vests are located under your seat and should be used only when instructed by the cabin crew. Remaining calm and following the instructions of our crew are crucial in an emergency situation."
     }
    
 }
