@@ -636,8 +636,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="398" translatesAutoresizingMaskIntoConstraints="NO" id="DsC-kZ-60K">
-                                <rect key="frame" x="0.0" y="768.66666666666652" width="393" height="39.333333333333371"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="398" translatesAutoresizingMaskIntoConstraints="NO" id="DsC-kZ-60K">
+                                <rect key="frame" x="8" y="768" width="377" height="35"/>
                                 <string key="text">Note: All temperatures are in ºC and all altitudes are in Feet. Formula is based on ICAO Doc 8168, PANS-OPS, Volume I.
 This is not an official calculator, so, use at your own risk!!!</string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
@@ -990,12 +990,6 @@ ALTITUDES</string>
                                     <constraint firstAttribute="width" constant="170" id="jwi-jD-eDn"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Cold Temperature Correction" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDe-5e-ijh">
-                                <rect key="frame" x="0.0" y="121" width="393.33333333333348" height="37"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view autoresizesSubviews="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NGf-8q-Cck" customClass="RoundedCornerView" customModule="AviaAssist" customModuleProvider="target">
                                 <rect key="frame" x="51" y="710" width="300.33333333333331" height="50"/>
                                 <subviews>
@@ -1132,6 +1126,12 @@ ALTITUDES</string>
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Cold Temperature Correction" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDe-5e-ijh">
+                                <rect key="frame" x="4" y="119" width="385" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wSv-fT-vgK"/>
                         <color key="backgroundColor" name="Background"/>

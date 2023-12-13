@@ -18,7 +18,7 @@ class ColdTemp: UIViewController {
     // Background
         @IBOutlet weak var backgroundImage: UIImageView!
 
-    // Uncorrected fix altitudes text fields
+    //Uncorrected fix altitudes text fields
         @IBOutlet weak var fix1Alt: UITextField!
         @IBOutlet weak var fix2Alt: UITextField!
         @IBOutlet weak var fix3Alt: UITextField!
@@ -28,7 +28,7 @@ class ColdTemp: UIViewController {
         @IBOutlet weak var fix7Alt: UITextField!
         @IBOutlet weak var fix8Alt: UITextField!
     
-    // Corrected fix altitudes labels
+    //Corrected fix altitudes labels
         @IBOutlet weak var fix1Corrected: UILabel!
         @IBOutlet weak var fix2Corrected: UILabel!
         @IBOutlet weak var fix3Corrected: UILabel!
@@ -38,17 +38,17 @@ class ColdTemp: UIViewController {
         @IBOutlet weak var fix7Corrected: UILabel!
         @IBOutlet weak var fix8Corrected: UILabel!
     
-    // Temperature and elevation text fields
+    //Temperature and elevation text fields
         @IBOutlet weak var airportTemp: UITextField!
         @IBOutlet weak var airportElev: UITextField!
     
-    // Automatic keyboard and minus sign for airport temperature text input
+    //Automatic keyboard and minus sign for airport temperature text input
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         airportTemp.becomeFirstResponder()
         minusAction()
     }
-    // Minus sign action
+    //Minus sign action
     func minusAction() {
     let minusLabel = UILabel()
         minusLabel.text = "-"
@@ -56,7 +56,7 @@ class ColdTemp: UIViewController {
         airportTemp.leftViewMode = UITextField.ViewMode.always
     }
     
-    // Constants, variables and formula
+    //Constants, variables and formula
     func formula(altitudeText: UITextField) -> String {
         // Error handling
         if (altitudeText.text?.isEmpty)! {
@@ -112,7 +112,6 @@ class ColdTemp: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
    

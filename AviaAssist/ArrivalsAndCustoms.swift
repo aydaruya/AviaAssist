@@ -13,7 +13,7 @@ class ArrivalsAndCustoms: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lbl.text = "Değerli misafirler kaptan konuşuyor, .....….*.....…. nedeni ile pisti pas geçtik. *HAVA KOŞULLARI Uçuşumuz normal sürecinde devam etmektedir. İniş için tekrar yaklaşma yapacağız. Anlayışınız için teşekkür ederiz. Dear guests this is the captain speaking, we did cancel our approach due to .....….*.....…. * WEATHER CONDITIONS Our flight continues in normal progress. We will start another approach shortly. Thank you for your understanding."
+        lbl.text = "Değerli yolcularımız, varışımıza yaklaşıyoruz. Lütfen gümrük ve pasaport kontrolü için gerekli evraklarınızı hazır bulundurunuz. Yolcu salonuna ulaştıktan sonra, varış kartlarınızı ve pasaportlarınızı görevlilere ibraz ediniz. Gümrük kuralları ve sınırlamalar hakkında herhangi bir sorunuz olursa, lütfen terminaldeki görevlilere danışın. Uçuşumuzu tercih ettiğiniz için teşekkür ederiz.\n\nDear passengers, we are approaching our destination. Please have your documents ready for customs and passport control. Upon reaching the arrivals hall, present your landing cards and passports to the officers. If you have any questions about customs regulations and restrictions, please consult the officials at the terminal. Thank you for flying with us."
     }
    
 }
