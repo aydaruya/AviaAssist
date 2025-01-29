@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A21FD852D49F14400CD7520 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A21FD842D49F14400CD7520 /* GoogleService-Info.plist */; };
+		7A21FD8A2D49F3E800CD7520 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7A21FD892D49F3E800CD7520 /* FirebaseCore */; };
+		7A21FD8C2D49F3E800CD7520 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 7A21FD8B2D49F3E800CD7520 /* FirebaseDatabase */; };
 		7AA762172B21608900A87295 /* ColdTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA762162B21608900A87295 /* ColdTemp.swift */; };
 		7AA7621B2B217BB900A87295 /* AutomatedCFRCheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA7621A2B217BB900A87295 /* AutomatedCFRCheckInViewController.swift */; };
 		7AA7621D2B21A74600A87295 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA7621C2B21A74600A87295 /* Dashboard.swift */; };
@@ -55,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A21FD842D49F14400CD7520 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7AA762162B21608900A87295 /* ColdTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColdTemp.swift; sourceTree = "<group>"; };
 		7AA7621A2B217BB900A87295 /* AutomatedCFRCheckInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomatedCFRCheckInViewController.swift; sourceTree = "<group>"; };
 		7AA7621C2B21A74600A87295 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A21FD8C2D49F3E800CD7520 /* FirebaseDatabase in Frameworks */,
+				7A21FD8A2D49F3E800CD7520 /* FirebaseCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +169,7 @@
 				7AEB502C2B26A07900EA2EB3 /* CTOT.swift */,
 				7AEB502E2B26A49500EA2EB3 /* ChangeOf.swift */,
 				7AEB50302B2A5B4100EA2EB3 /* RoundedCornerView.swift */,
+				7A21FD842D49F14400CD7520 /* GoogleService-Info.plist */,
 			);
 			path = AviaAssist;
 			sourceTree = "<group>";
@@ -272,6 +279,9 @@
 				Base,
 			);
 			mainGroup = C5CE70052B03EF6C009CB360;
+			packageReferences = (
+				7A21FD862D49F1BA00CD7520 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = C5CE700F2B03EF6C009CB360 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -289,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5CE701E2B03EF6F009CB360 /* LaunchScreen.storyboard in Resources */,
+				7A21FD852D49F14400CD7520 /* GoogleService-Info.plist in Resources */,
 				C5CE701B2B03EF6F009CB360 /* Assets.xcassets in Resources */,
 				C5CE70192B03EF6C009CB360 /* Main.storyboard in Resources */,
 			);
@@ -678,6 +689,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7A21FD862D49F1BA00CD7520 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7A21FD892D49F3E800CD7520 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A21FD862D49F1BA00CD7520 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		7A21FD8B2D49F3E800CD7520 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A21FD862D49F1BA00CD7520 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C5CE70062B03EF6C009CB360 /* Project object */;
 }
