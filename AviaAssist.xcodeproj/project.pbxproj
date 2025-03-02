@@ -10,6 +10,7 @@
 		7A21FD852D49F14400CD7520 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A21FD842D49F14400CD7520 /* GoogleService-Info.plist */; };
 		7A21FD8A2D49F3E800CD7520 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7A21FD892D49F3E800CD7520 /* FirebaseCore */; };
 		7A21FD8C2D49F3E800CD7520 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 7A21FD8B2D49F3E800CD7520 /* FirebaseDatabase */; };
+		7A3CE17F2D72E85300CB3183 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7A3CE17E2D72E85300CB3183 /* FirebaseAnalytics */; };
 		7AA762172B21608900A87295 /* ColdTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA762162B21608900A87295 /* ColdTemp.swift */; };
 		7AA7621B2B217BB900A87295 /* AutomatedCFRCheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA7621A2B217BB900A87295 /* AutomatedCFRCheckInViewController.swift */; };
 		7AA7621D2B21A74600A87295 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA7621C2B21A74600A87295 /* Dashboard.swift */; };
@@ -100,6 +101,7 @@
 			files = (
 				7A21FD8C2D49F3E800CD7520 /* FirebaseDatabase in Frameworks */,
 				7A21FD8A2D49F3E800CD7520 /* FirebaseCore in Frameworks */,
+				7A3CE17F2D72E85300CB3183 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,6 +713,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7A21FD862D49F1BA00CD7520 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabase;
+		};
+		7A3CE17E2D72E85300CB3183 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A21FD862D49F1BA00CD7520 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
